@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ChevronDown, ChevronRight, Search } from "lucide-react";
+import { ChevronDown, ChevronRight, Search, Menu, X } from "lucide-react";
 
 const sectorData = {
   Buildings: {
@@ -26,13 +26,13 @@ const sectorData = {
 const Navbar = () => {
   const location = useLocation();
 
+  const [mobileOpen, setMobileOpen] = useState(false);
   const [isOpen, setIsOpen] = useState({
     sectors: false,
     services: false,
     who: false,
     careers: false,
   });
-
   const [activeSector, setActiveSector] = useState("Buildings");
 
   const wrapperRefSectors = useRef(null);
@@ -80,8 +80,7 @@ const Navbar = () => {
   const current = sectorData[activeSector];
 
   return (
-    <nav className="bg-gradient-to-r from-[#003057] to-[#4a4a4a] text-white px-8 py-4 shadow-md fixed top-0 left-0 w-full z-50">
-
+    <nav className="bg-gradient-to-r from-[#003057] to-[#4a4a4a] text-white px-6 py-4 shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-4">
@@ -95,8 +94,15 @@ const Navbar = () => {
           </span>
         </Link>
 
-        {/* Navigation Links */}
-        <div className="flex space-x-6 items-center text-sm font-semibold relative">
+        {/* Hamburger menu icon */}
+        <div className="md:hidden">
+          <button onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle Menu">
+            {mobileOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+
+        {/* Desktop Nav */}
+        <div className="hidden md:flex space-x-6 items-center text-sm font-semibold relative">
           <Link
             to="/"
             className={`transition ${
@@ -280,6 +286,88 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+
+      {mobileOpen && (
+  <div className="md:hidden mt-4 space-y-2 text-sm font-semibold px-4 pb-6 bg-[#003057]">
+    <Link to="/" className="block text-white hover:text-yellow-400">Home</Link>
+
+    {/* Mobile Dropdown: Sectors */}
+    <div>
+      <button
+        onClick={() => toggleDropdown("sectors")}
+        className="w-full flex justify-between items-center text-white hover:text-yellow-400"
+      >
+        Sectors
+        <ChevronDown
+          className={`transform transition-transform ${
+            isOpen.sectors ? "rotate-180" : ""
+          }`}
+          size={18}
+        />
+      </button>
+      {isOpen.sectors && (
+        <div className="ml-4 mt-2 space-y-1">
+          {Object.keys(sectorData).map((sector) => (
+            <Link
+              key={sector}
+              to={`/sectors/${sector.toLowerCase()}`}
+              className="block text-white hover:text-yellow-300"
+              onClick={() => setMobileOpen(false)}
+            >
+              {sector}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+
+    <Link to="/services" className="block text-white hover:text-yellow-400">Services</Link>
+
+    {/* Mobile Dropdown: Who We Are */}
+    <div>
+      <button
+        onClick={() => toggleDropdown("who")}
+        className="w-full flex justify-between items-center text-white hover:text-yellow-400"
+      >
+        Who We Are
+        <ChevronDown
+          className={`transform transition-transform ${
+            isOpen.who ? "rotate-180" : ""
+          }`}
+          size={18}
+        />
+      </button>
+      {isOpen.who && (
+        <div className="ml-4 mt-2 space-y-1">
+          {[
+            { name: "More About Us", path: "/who-we-are/more-about-us" },
+            { name: "Our History", path: "/who-we-are/history" },
+            { name: "Innovation", path: "/who-we-are/innovation" },
+            { name: "Safety", path: "/who-we-are/safety" },
+            { name: "Diversity and Equity", path: "/who-we-are/diversity" },
+            { name: "Privacy Policy", path: "/who-we-are/privacy-policy" },
+          ].map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              className="block text-white hover:text-yellow-300"
+              onClick={() => setMobileOpen(false)}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+
+    <Link to="/location" className="block text-white hover:text-yellow-400">Locations</Link>
+    <Link to="/insight" className="block text-white hover:text-yellow-400">Insights</Link>
+    <Link to="/newsroom" className="block text-white hover:text-yellow-400">Newsroom</Link>
+    <Link to="/careers" className="block text-white hover:text-yellow-400">Careers</Link>
+    <Link to="/reach-out" className="block text-white hover:text-yellow-400">Reach Out</Link>
+  </div>
+)}
+
     </nav>
   );
 };
