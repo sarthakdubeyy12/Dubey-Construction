@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+
+
+/* ─────────────────────────────────────────────────────────────── */
+/* Animated Gradient for Innovation Page Background              */
+/* ─────────────────────────────────────────────────────────────── */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(
+    -45deg,
+    #1e3a8a,
+    #3b82f6,
+    #06b6d4,
+    #9333ea
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+}
+
+
