@@ -35,7 +35,7 @@ const LocationPage = () => {
   }, []);
 
   return (
-    <div className="font-sans antialiased overflow-x-hidden">
+    <div className="font-sans my-12 antialiased overflow-x-hidden">
       {/* ───────────────────────────────────────────── */}
       {/* HERO / BANNER SECTION */}
       {/* ───────────────────────────────────────────── */}

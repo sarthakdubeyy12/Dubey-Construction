@@ -22,7 +22,7 @@ const Section = ({ icon: Icon, title, children }) => (
 
 const PrivacyPolicy = () => {
   return (
-    <section className="bg-gradient-to-b from-white via-gray-50 to-gray-100 text-gray-800 py-20 px-6 md:px-20">
+    <section className="bg-gradient-to-b from-white via-gray-50 to-gray-100 text-gray-800 py-20 my-20 px-6 md:px-20">
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-[url('/pattern.svg')] bg-cover opacity-5 pointer-events-none" />
 

@@ -32,7 +32,7 @@ const Careers = () => {
   ];
 
   return (
-    <div className="text-gray-800 font-sans">
+    <div className="text-gray-800 my-21 font-sans">
       {/* Hero Section */}
       <header className="relative w-full h-[90vh] overflow-hidden">
         <div

@@ -11,7 +11,7 @@ const Insight = () => {
   }, []);
 
   return (
-    <div className="bg-white text-gray-800 font-sans">
+    <div className="bg-white text-gray-800 font-sans my-21">
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/bigbigbig.webp')" }}>
         <div />

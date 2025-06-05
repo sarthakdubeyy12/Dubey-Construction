@@ -66,7 +66,7 @@ const Newsroom = () => {
   ];
 
   return (
-    <div className="text-gray-800 font-sans">
+    <div className="text-gray-800 my-22 font-sans">
       {/* Header */}
       <header className="relative w-full h-[90vh] overflow-hidden">
         {/* Blurred Background Layer */}

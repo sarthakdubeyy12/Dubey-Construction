@@ -27,7 +27,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 px-6 md:px-12 bg-white text-black">
+    <section className="py-20 px-6 md:px-12 my-20 bg-white text-black">
       <div className="text-center mb-10">
         <h2 className="text-4xl md:text-5xl font-extrabold">
           Services <span className="text-yellow-500">We Offer</span>

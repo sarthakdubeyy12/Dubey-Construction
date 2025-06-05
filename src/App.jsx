@@ -56,6 +56,7 @@ function App() {
             <Route path="/who-we-are/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/reach-out" element={<ReachOut />} />
             <Route path="/ethics" element={<Ethics />} />
+            <Route path="/home" element={<Home />} />
             
           </Routes>
         </main>

@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ChevronDown, ChevronRight, Search } from "lucide-react";
 
 const sectorData = {
@@ -8,7 +8,6 @@ const sectorData = {
     description:
       "We rise to the challenges associated with a diverse buildings portfolio to bring added value to every project...",
     image: "/buildingpage.webp",
-  
   },
   Civil: {
     title: "Civil",
@@ -25,6 +24,8 @@ const sectorData = {
 };
 
 const Navbar = () => {
+  const location = useLocation();
+
   const [isOpen, setIsOpen] = useState({
     sectors: false,
     services: false,
@@ -38,7 +39,6 @@ const Navbar = () => {
   const wrapperRefWho = useRef(null);
   const wrapperRefCareers = useRef(null);
 
-  // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (
@@ -75,13 +75,16 @@ const Navbar = () => {
     }));
   };
 
+  const isActive = (path) => location.pathname === path;
+  const isPathMatch = (prefix) => location.pathname.startsWith(prefix);
   const current = sectorData[activeSector];
 
   return (
-    <nav className="bg-gradient-to-r from-[#003057] to-[#4a4a4a] text-white px-8 py-4 shadow-md relative z-50">
+    <nav className="bg-gradient-to-r from-[#003057] to-[#4a4a4a] text-white px-8 py-4 shadow-md fixed top-0 left-0 w-full z-50">
+
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center space-x-4">
+        <Link to="/" className="flex items-center space-x-4">
           <img
             src="/dubey.webp"
             alt="Dubey Construction Logo"
@@ -90,11 +93,16 @@ const Navbar = () => {
           <span className="text-2xl font-semibold tracking-wider text-[#C59B7A]">
             CONSTRUCTION
           </span>
-        </div>
+        </Link>
 
         {/* Navigation Links */}
         <div className="flex space-x-6 items-center text-sm font-semibold relative">
-          <Link to="/" className="hover:text-yellow-300 transition">
+          <Link
+            to="/"
+            className={`transition ${
+              isActive("/") ? "text-yellow-400 font-bold underline" : "hover:text-yellow-300"
+            }`}
+          >
             Home
           </Link>
 
@@ -102,7 +110,9 @@ const Navbar = () => {
           <div className="relative" ref={wrapperRefSectors}>
             <button
               onClick={() => toggleDropdown("sectors")}
-              className="flex items-center hover:text-yellow-300 transition"
+              className={`flex items-center transition ${
+                isPathMatch("/sectors") ? "text-yellow-400 font-bold underline" : "hover:text-yellow-300"
+              }`}
             >
               Sectors <ChevronDown size={16} className="ml-1" />
             </button>
@@ -113,11 +123,8 @@ const Navbar = () => {
                   setIsOpen((prev) => ({ ...prev, sectors: false }))
                 }
               >
-                {/* Left List */}
                 <div className="w-1/3 bg-gradient-to-b from-gray-50 to-white border-r border-gray-200 p-3 space-y-3">
-                  <h3 className="uppercase text-gray-600 text-xs tracking-widest mb-2">
-                    Sectors
-                  </h3>
+                  <h3 className="uppercase text-gray-600 text-xs tracking-widest mb-2">Sectors</h3>
                   {Object.keys(sectorData).map((sector) => (
                     <button
                       key={sector}
@@ -140,8 +147,6 @@ const Navbar = () => {
                     </button>
                   ))}
                 </div>
-
-                {/* Right Detail */}
                 <div className="w-2/3 flex flex-col bg-white rounded-r-xl overflow-hidden">
                   <div
                     className="h-40 bg-cover bg-center transition-transform duration-300 transform hover:scale-105 rounded-tr-xl"
@@ -152,9 +157,7 @@ const Navbar = () => {
                       {current.title}
                       <span className="block w-10 h-1 bg-[#003057] mt-1 rounded-full"></span>
                     </h3>
-                    <p className="text-gray-700 text-xs leading-snug mb-2">
-                      {current.description}
-                    </p>
+                    <p className="text-gray-700 text-xs leading-snug mb-2">{current.description}</p>
                     <Link
                       to={`/sectors/${activeSector.toLowerCase()}`}
                       className="inline-block text-yellow-400 text-sm font-semibold hover:underline"
@@ -167,7 +170,12 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link to="/services" className="hover:text-yellow-300 transition">
+          <Link
+            to="/services"
+            className={`transition ${
+              isActive("/services") ? "text-yellow-400 font-bold underline" : "hover:text-yellow-300"
+            }`}
+          >
             Services
           </Link>
 
@@ -175,7 +183,9 @@ const Navbar = () => {
           <div className="relative" ref={wrapperRefWho}>
             <button
               onClick={() => toggleDropdown("who")}
-              className="flex items-center hover:text-yellow-300 transition"
+              className={`flex items-center transition ${
+                isPathMatch("/who-we-are") ? "text-yellow-400 font-bold underline" : "hover:text-yellow-300"
+              }`}
             >
               Who We Are <ChevronDown size={16} className="ml-1" />
             </button>
@@ -186,11 +196,8 @@ const Navbar = () => {
                   setIsOpen((prev) => ({ ...prev, who: false }))
                 }
               >
-                {/* Left List */}
                 <div className="w-1/3 bg-gradient-to-b from-gray-50 to-white border-r border-gray-200 p-3 space-y-3">
-                  <h3 className="uppercase text-gray-600 text-xs tracking-widest mb-2">
-                    Who We Are
-                  </h3>
+                  <h3 className="uppercase text-gray-600 text-xs tracking-widest mb-2">Who We Are</h3>
                   {[
                     { name: "More About Us", path: "/who-we-are/more-about-us" },
                     { name: "Our History", path: "/who-we-are/history" },
@@ -202,14 +209,16 @@ const Navbar = () => {
                     <Link
                       key={item.name}
                       to={item.path}
-                      className="w-full text-left px-3 py-2 flex items-center justify-between rounded-lg text-gray-700 hover:bg-gray-100 text-sm font-medium"
+                      className={`w-full text-left px-3 py-2 flex items-center justify-between rounded-lg text-sm font-medium ${
+                        isActive(item.path)
+                          ? "text-yellow-400 font-bold underline"
+                          : "text-gray-700 hover:bg-gray-100"
+                      }`}
                     >
                       {item.name}
                     </Link>
                   ))}
                 </div>
-
-                {/* Right Info Box */}
                 <div className="w-2/3 flex flex-col bg-white rounded-r-xl overflow-hidden">
                   <div
                     className="h-90 bg-cover bg-center transition-transform duration-300 transform hover:scale-105 rounded-tr-xl"
@@ -221,25 +230,48 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link to="/location" className="hover:text-yellow-300 transition">
+          <Link
+            to="/location"
+            className={`transition ${
+              isActive("/location") ? "text-yellow-400 font-bold underline" : "hover:text-yellow-300"
+            }`}
+          >
             Locations
           </Link>
 
-          
-
-          <Link to="/insight" className="hover:text-yellow-300 transition">
+          <Link
+            to="/insight"
+            className={`transition ${
+              isActive("/insight") ? "text-yellow-400 font-bold underline" : "hover:text-yellow-300"
+            }`}
+          >
             Insights
           </Link>
-          <Link to="/newsroom" className="hover:text-yellow-300 transition">
+
+          <Link
+            to="/newsroom"
+            className={`transition ${
+              isActive("/newsroom") ? "text-yellow-400 font-bold underline" : "hover:text-yellow-300"
+            }`}
+          >
             Newsroom
           </Link>
 
-          <Link to="/careers" className="hover:text-yellow-300 transition">
+          <Link
+            to="/careers"
+            className={`transition ${
+              isActive("/careers") ? "text-yellow-400 font-bold underline" : "hover:text-yellow-300"
+            }`}
+          >
             Careers
           </Link>
 
-
-          <Link to="/reach-out" className="hover:text-yellow-300 transition">
+          <Link
+            to="/reach-out"
+            className={`transition ${
+              isActive("/reach-out") ? "text-yellow-400 font-bold underline" : "hover:text-yellow-300"
+            }`}
+          >
             Reach Out
           </Link>
 
