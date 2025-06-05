@@ -41,7 +41,7 @@ const LocationPage = () => {
       {/* ───────────────────────────────────────────── */}
       <section
         className="relative w-full h-screen bg-cover bg-center"
-        style={{ backgroundImage: `url('/location12.jpg')` }}
+        style={{ backgroundImage: `url('/location12.webp')` }}
       >
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
           <div className="flex items-center gap-2 mb-2" data-aos="fade-down">

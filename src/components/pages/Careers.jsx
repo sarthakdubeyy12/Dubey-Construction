@@ -10,22 +10,22 @@ const Careers = () => {
 
   const legacySections = [
     {
-      img: "/architect.jpg",
+      img: "/architect.webp",
       title: "Build with Vision",
       text: "We're crafting a tomorrow rooted in precision, responsibility, and vision. Join us in projects that inspire progress.",
     },
     {
-      img: "/heaven.jpg",
+      img: "/heaven.webp",
       title: "Shape the Skyline",
       text: "From towering structures to sustainable spaces, be a part of projects that define the urban landscape.",
     },
     {
-      img: "/glass.jpg",
+      img: "/glass.webp",
       title: "Lead with Integrity",
       text: "Our foundation is built on trust. We value ethical leadership and hands-on innovation in every build.",
     },
     {
-      img: "/facade.jpg",
+      img: "/facade.webp",
       title: "Design Your Future",
       text: "Empowering every team member with growth opportunities, mentorship, and an open platform for ideas.",
     },
@@ -37,7 +37,7 @@ const Careers = () => {
       <header className="relative w-full h-[90vh] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center filter blur-sm scale-130 opacity-120"
-          style={{ backgroundImage: "url('/careers1.jpg')" }}
+          style={{ backgroundImage: "url('/careers1.webp')" }}
         />
         <div className="absolute inset-0 bg-black opacity-40" />
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
@@ -94,7 +94,7 @@ const Careers = () => {
       {/* Current Openings */}
       <section
         className="relative py-32 px-6 md:px-20 bg-fixed bg-center bg-cover text-white"
-        style={{ backgroundImage: "url('/new1212.jpg')" }}
+        style={{ backgroundImage: "url('/bigbig.webp')" }}
       >
         <div className="absolute inset-0 bg-black opacity-70" />
         <div className="relative z-10 max-w-6xl mx-auto">

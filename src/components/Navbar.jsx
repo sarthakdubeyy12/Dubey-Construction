@@ -7,19 +7,20 @@ const sectorData = {
     title: "Buildings",
     description:
       "We rise to the challenges associated with a diverse buildings portfolio to bring added value to every project...",
-    image: "/buildingpage.jpg",
+    image: "/buildingpage.webp",
+  
   },
   Civil: {
     title: "Civil",
     description:
       "Our Civil sector focuses on infrastructure—roads, bridges, water treatment, and more...",
-    image: "/civil.jpg",
+    image: "/civil.webp",
   },
   Industrial: {
     title: "Industrial",
     description:
       "In Industrial, we tackle factories, warehouses, and manufacturing plants with precision...",
-    image: "/commercial.jpg",
+    image: "/industrial.webp",
   },
 };
 
@@ -82,7 +83,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center space-x-4">
           <img
-            src="/dubey.jpg"
+            src="/dubey.webp"
             alt="Dubey Construction Logo"
             className="w-14 h-14 rounded-full object-cover border-2 border-[#C59B7A]"
           />
@@ -170,10 +171,6 @@ const Navbar = () => {
             Services
           </Link>
 
-          <Link to="/location" className="hover:text-yellow-300 transition">
-            Locations
-          </Link>
-
           {/* Who We Are Dropdown */}
           <div className="relative" ref={wrapperRefWho}>
             <button
@@ -216,13 +213,19 @@ const Navbar = () => {
                 <div className="w-2/3 flex flex-col bg-white rounded-r-xl overflow-hidden">
                   <div
                     className="h-90 bg-cover bg-center transition-transform duration-300 transform hover:scale-105 rounded-tr-xl"
-                    style={{ backgroundImage: `url('/building2.jpg')` }}
+                    style={{ backgroundImage: `url('/building2.webp')` }}
                   />
                   <div className="flex-1 p-4" />
                 </div>
               </div>
             )}
           </div>
+
+          <Link to="/location" className="hover:text-yellow-300 transition">
+            Locations
+          </Link>
+
+          
 
           <Link to="/insight" className="hover:text-yellow-300 transition">
             Insights

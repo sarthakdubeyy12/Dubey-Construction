@@ -5,9 +5,9 @@ import { ChevronRight } from "lucide-react";
 
 const backgroundImages = [
   "/dropdown11.webp",
-  "/dropdown21.jpg",
-  "/dropdown12.jpg",
-  "/dropdown13.jpg",
+  "/dropdown21.webp",
+  "/dropdown12.webp",
+  "/dropdown13.webp",
 ];
 
 const Home = () => {
@@ -125,7 +125,7 @@ const Home = () => {
       <section className="bg-white text-black px-10 py-20" data-aos="fade-up">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <img src="/photo.jpg" alt="Employee Owned" className="w-full h-auto rounded-xl shadow-lg object-cover" />
+            <img src="/photo.webp" alt="Employee Owned" className="w-full h-auto rounded-xl shadow-lg object-cover" />
           </div>
           <div className="space-y-8">
             <h2 className="text-4xl font-extrabold leading-tight">100% Employee Owned</h2>
@@ -150,7 +150,7 @@ const Home = () => {
       <section className="bg-white text-black px-10 py-20" data-aos="fade-up">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <img src="/building.jpg" alt="Stunning Structures" className="w-full h-auto rounded-xl shadow-lg object-cover" />
+            <img src="/building.webp" alt="Stunning Structures" className="w-full h-auto rounded-xl shadow-lg object-cover" />
           </div>
           <div className="space-y-6">
             <h2 className="text-4xl font-extrabold leading-tight">Stunning structures, sustainably built</h2>
@@ -183,7 +183,7 @@ const Home = () => {
       
       {/* FANCY CONSISTENT EXTENDED SECTION */}
       <section className="relative bg-gradient-to-br from-[#f1f5f9] to-[#e2e8f0] text-black px-6 md:px-20 py-28" data-aos="fade-up">
-        <div className="absolute inset-0 opacity-40 bg-[url('/dropdown.jpg')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 opacity-40 bg-[url('/dropdown.webp')] bg-cover bg-center"></div>
         <div className="relative z-10 max-w-7xl mx-auto space-y-28">
 
           {/* Section 1 */}
@@ -204,7 +204,7 @@ const Home = () => {
             </div>
             <div>
               <img
-                src="/dropdown1.jpg"
+                src="/dropdown1.webp"
                 alt="Visionary Construction"
                 className="rounded-2xl shadow-2xl w-full object-cover"
               />
@@ -214,7 +214,7 @@ const Home = () => {
           {/* Section 2 */}
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <img src="/dropdown2.jpg" alt="Innovation & Sustainability" className="rounded-2xl shadow-2xl w-full object-cover" />
+              <img src="/dropdown2.webp" alt="Innovation & Sustainability" className="rounded-2xl shadow-2xl w-full object-cover" />
             </div>
             <div className="space-y-6 text-lg">
               <h2 className="text-5xl font-extrabold mb-6 leading-tight">
@@ -244,7 +244,7 @@ const Home = () => {
               </p>
             </div>
             <div>
-              <img src="/dropdown3.jpg" alt="People Planet Progress" className="rounded-2xl shadow-2xl w-full object-cover" />
+              <img src="/dropdown3.webp" alt="People Planet Progress" className="rounded-2xl shadow-2xl w-full object-cover" />
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ const Footer = () => {
         
         {/* Brand Info */}
         <div>
-          <img src="/dubey.jpg" alt="Dubey Construction Logo" className="h-16 mb-4" />
+          <img src="/dubey.webp" alt="Dubey Construction Logo" className="h-16 mb-4" />
           <p className="text-[#d1b85b] text-base font-semibold mb-2">Dubey Construction India</p>
           <p className="text-gray-400">
             Building tomorrow’s legacy today. We deliver excellence in civil and structural projects.

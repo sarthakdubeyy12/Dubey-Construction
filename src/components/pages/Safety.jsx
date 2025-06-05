@@ -13,7 +13,7 @@ const Safety = () => {
       {/* Hero Section */}
       <div
         className="relative w-full h-screen bg-cover bg-center"
-        style={{ backgroundImage: "url('/safety12.jpg')" }}
+        style={{ backgroundImage: "url('/safety12.webp')" }}
       >
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -53,7 +53,7 @@ const Safety = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           {/* Image Left */}
           <div className="overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300 shadow-md">
-            <img src="/safety13.jpg" alt="PCL Safety Gear" className="w-full h-auto object-cover" />
+            <img src="/safety13.webp" alt="PCL Safety Gear" className="w-full h-auto object-cover" />
           </div>
 
           {/* Text Right */}
@@ -79,7 +79,7 @@ const Safety = () => {
 
           {/* Image Right */}
           <div className="overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300 shadow-md">
-            <img src="/safety14.jpg" alt="Apprentices Working" className="w-full h-auto object-cover" />
+            <img src="/safety14.webp" alt="Apprentices Working" className="w-full h-auto object-cover" />
           </div>
         </div>
       </section>
@@ -88,7 +88,7 @@ const Safety = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           {/* Image Left */}
           <div className="overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300 shadow-md">
-            <img src="/safety15.jpg" alt="PCL Safety Gear" className="w-full h-auto object-cover" />
+            <img src="/safety15.webp" alt="PCL Safety Gear" className="w-full h-auto object-cover" />
           </div>
 
           {/* Text Right */}

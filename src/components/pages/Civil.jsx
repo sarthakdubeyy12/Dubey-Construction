@@ -6,27 +6,27 @@ import "aos/dist/aos.css";
 const services = [
   {
     title: "Civil Special Project",
-    image: "/specialcivil.jpg",
+    image: "/specialcivil.webp",
   },
   {
     title: "Dams and Water Control",
-    image: "/damscivil.jpg",
+    image: "/damscivil.webp",
   },
   {
     title: "Transit Station",
-    image: "/transitcivil.jpg",
+    image: "/transitcivil.webp",
   },
   {
     title: "Port Infrastructure",
-    image: "/portcivil.jpg",
+    image: "/portcivil.webp",
   },
   {
     title: "Transportation Infrastructure",
-    image: "/transcivil.jpg",
+    image: "/transcivil.webp",
   },
   {
     title: "Water Infrastructure",
-    image: "/watercivil.jpg",
+    image: "/watercivil.webp",
   },
   
 ];
@@ -41,7 +41,7 @@ const BuildingsPage = () => {
       {/* First Section: Fullscreen Background */}
       <div
         className="relative w-full h-screen bg-cover bg-center"
-        style={{ backgroundImage: `url('/civil12.jpg')` }}
+        style={{ backgroundImage: `url('/civil12.webp')` }}
       >
         <div className="absolute top-40 right-10 text-white">
           <div className="flex items-center gap-2 mb-1">
@@ -78,7 +78,7 @@ const BuildingsPage = () => {
       {/* Third Section: Full Background Image */}
       <div
         className="w-full h-[600px] bg-cover bg-center"
-        style={{ backgroundImage: `url('/bridge.jpg')` }}
+        style={{ backgroundImage: `url('/bridge.webp')` }}
       ></div>
 
       {/* “What We Build” Section with Decorative Triangles */}

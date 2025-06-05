@@ -6,39 +6,39 @@ import "aos/dist/aos.css";
 const services = [
   {
     title: "Building Special Project",
-    image: "/specialproject.jpg",
+    image: "/specialproject.webp",
   },
   {
     title: "Convention Centers",
-    image: "/conventioncentre.jpg",
+    image: "/conventioncentre.webp",
   },
   {
     title: "Education",
-    image: "/education.jpg",
+    image: "/education.webp",
   },
   {
     title: "Entertainment",
-    image: "/entertainment.jpg",
+    image: "/entertainment.webp",
   },
   {
     title: "Hospitality and Gaming",
-    image: "/hospitality.jpg",
+    image: "/hospitality.webp",
   },
   {
     title: "Multifamily Residential",
-    image: "/family.jpg",
+    image: "/family.webp",
   },
   {
     title: "Renewable",
-    image: "/renewable.jpg",
+    image: "/renewable.webp",
   },
   {
     title: "Storage Hall",
-    image: "/storage.jpg",
+    image: "/storage.webp",
   },
   {
     title: "Villa",
-    image: "/villa.jpg",
+    image: "/villa.webp",
   },
 ];
 
@@ -52,7 +52,7 @@ const BuildingsPage = () => {
       {/* First Section: Fullscreen Background */}
       <div
         className="relative w-full h-screen bg-cover bg-center"
-        style={{ backgroundImage: `url('/12345.jpg')` }}
+        style={{ backgroundImage: `url('/12345.webp')` }}
       >
         <div className="absolute top-70 left-10 text-white">
           <div className="flex items-center gap-2 mb-1">
@@ -88,7 +88,7 @@ const BuildingsPage = () => {
       {/* Third Section: Full Background Image */}
       <div
         className="w-full h-[600px] bg-cover bg-center"
-        style={{ backgroundImage: `url('/123456.jpg')` }}
+        style={{ backgroundImage: `url('/123456.webp')` }}
       ></div>
 
       {/* “What We Build” Section with Decorative Triangles */}

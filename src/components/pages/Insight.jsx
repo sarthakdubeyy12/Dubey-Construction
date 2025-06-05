@@ -13,7 +13,7 @@ const Insight = () => {
   return (
     <div className="bg-white text-gray-800 font-sans">
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/bigbigbig.jpg')" }}>
+      <section className="relative h-[90vh] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/bigbigbig.webp')" }}>
         <div />
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -49,7 +49,7 @@ const Insight = () => {
       {/* Innovation Highlight */}
       <section className="py-28 px-6 md:px-20 bg-white">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
-          <img src="/platform1.jpg" alt="Innovation" className="w-full md:w-1/2 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300" />
+          <img src="/platform1.webp" alt="Innovation" className="w-full md:w-1/2 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300" />
           <div data-aos="fade-left" className="md:w-1/2">
             <h2 className="text-4xl font-bold mb-4">Innovation in Every Beam</h2>
             <p className="text-gray-700 text-lg mb-4">
@@ -85,7 +85,7 @@ const Insight = () => {
       </section>
 
       {/* Leadership Quote */}
-      <section className="relative py-32 px-6 md:px-20 bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('/hookup.jpg')" }}>
+      <section className="relative py-32 px-6 md:px-20 bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('/hookup.webp')" }}>
         <div className="absolute inset-0 bg-black opacity-60" />
         <div className="relative z-10 text-white text-center max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">"Great buildings start with great people."</h2>

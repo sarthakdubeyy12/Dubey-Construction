@@ -3,33 +3,6 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const services = [
-  {
-    title: "Civil Special Project",
-    image: "/specialcivil.jpg",
-  },
-  {
-    title: "Dams and Water Control",
-    image: "/damscivil.jpg",
-  },
-  {
-    title: "Transit Station",
-    image: "/transitcivil.jpg",
-  },
-  {
-    title: "Port Infrastructure",
-    image: "/portcivil.jpg",
-  },
-  {
-    title: "Transportation Infrastructure",
-    image: "/transcivil.jpg",
-  },
-  {
-    title: "Water Infrastructure",
-    image: "/watercivil.jpg",
-  },
-  
-];
 
 const BuildingsPage = () => {
   useEffect(() => {
@@ -41,7 +14,7 @@ const BuildingsPage = () => {
       {/* First Section: Fullscreen Background */}
       <div
         className="relative w-full h-screen bg-cover bg-center"
-        style={{ backgroundImage: `url('/12industrial.jpg')` }}
+        style={{ backgroundImage: `url('/12industrial.webp')` }}
       >
         <div className="absolute top-40 right-10 text-white">
           <div className="flex items-center gap-2 mb-1">
@@ -80,7 +53,7 @@ const BuildingsPage = () => {
       {/* Third Section: Full Background Image */}
       <div
         className="w-full h-[600px] bg-cover bg-center"
-        style={{ backgroundImage: `url('/indu.jpg')` }}
+        style={{ backgroundImage: `url('/indu.webp')` }}
       ></div>
 
       {/* “What We Build” Section with Decorative Triangles */}
@@ -126,7 +99,7 @@ const BuildingsPage = () => {
               data-aos-duration="800"
             >
               <img
-                src="/Fabrication.jpg"
+                src="/Fabrication.webp"
                 alt="Welding in Industrial Fabrication"
                 className="w-full rounded-2xl shadow-2xl hover:scale-105 transform transition duration-500 ease-in-out"
               />
@@ -193,7 +166,7 @@ const BuildingsPage = () => {
               data-aos-duration="800"
             >
               <img
-                src="/planning.jpg"
+                src="/planning.webp"
                 alt="Engineers Reviewing 3D Model"
                 className="w-full rounded-2xl shadow-2xl hover:scale-105 transform transition duration-500 ease-in-out"
               />
@@ -213,7 +186,7 @@ const BuildingsPage = () => {
               data-aos-duration="800"
             >
               <img
-                src="/delivery.jpg"
+                src="/delivery.webp"
                 alt="Welding in Industrial Fabrication"
                 className="w-full rounded-2xl shadow-2xl hover:scale-105 transform transition duration-500 ease-in-out"
               />
@@ -276,7 +249,7 @@ const BuildingsPage = () => {
               data-aos-duration="800"
             >
               <img
-                src="/maintenance1.jpg"
+                src="/maintenance1.webp"
                 alt="Engineers Reviewing 3D Model"
                 className="w-full rounded-2xl shadow-2xl hover:scale-105 transform transition duration-500 ease-in-out"
               />

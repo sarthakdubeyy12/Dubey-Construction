@@ -15,7 +15,7 @@ const MoreAboutUs = () => {
       {/* ─────────────────────────────────────────────────────────────── */}
       <section
         className="h-screen bg-cover bg-center flex items-center justify-start text-gray-700 px-10"
-        style={{ backgroundImage: `url('/buildingpage.jpg')` }}
+        style={{ backgroundImage: `url('/buildingpage.webp')` }}
       >
         <div data-aos="fade-right">
           <h1 className="text-4xl md:text-5xl font-extrabold mt-4 leading-tight text-black-400 max-w-2xl">
@@ -66,7 +66,7 @@ const MoreAboutUs = () => {
       {/* ─────────────────────────────────────────────────────────────── */}
       <section
         className="relative text-white px-6 md:px-12 lg:px-24 py-28 bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: "url('/your-fancy-background.jpg')" }}
+        style={{ backgroundImage: "url('/your-fancy-background.webp')" }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 z-0"></div>
 
@@ -112,7 +112,7 @@ const MoreAboutUs = () => {
       {/* ─────────────────────────────────────────────────────────────── */}
       <section
         className="h-screen bg-cover bg-center flex items-center justify-start text-white px-10"
-        style={{ backgroundImage: `url('/buckle.jpg')` }}
+        style={{ backgroundImage: `url('/buckle.webp')` }}
       >
       </section>
 
@@ -142,7 +142,7 @@ const MoreAboutUs = () => {
     {/* Safety */}
     <div>
       <div className="flex justify-center mb-4">
-        <img src="/safety.jpg" alt="Safety Icon" className="w-30 h-30 object-contain" />
+        <img src="/safety.webp" alt="Safety Icon" className="w-30 h-30 object-contain" />
       </div>
       <h3 className="text-lg font-semibold mb-2">Safety</h3>
       <p className="text-gray-700 mb-4">
@@ -154,7 +154,7 @@ const MoreAboutUs = () => {
     {/* Quality */}
     <div>
       <div className="flex justify-center mb-4">
-        <img src="/quality.jpg" alt="Quality Icon" className="w-30 h-30 object-contain" />
+        <img src="/quality.webp" alt="Quality Icon" className="w-30 h-30 object-contain" />
       </div>
       <h3 className="text-lg font-semibold mb-2">Quality</h3>
       <p className="text-gray-700 mb-4">
@@ -165,7 +165,7 @@ const MoreAboutUs = () => {
     {/* Sustainability */}
     <div>
       <div className="flex justify-center mb-4">
-        <img src="/sus.jpg" alt="Sustainability Icon" className="w-30 h-30 object-contain" />
+        <img src="/sus.webp" alt="Sustainability Icon" className="w-30 h-30 object-contain" />
       </div>
       <h3 className="text-lg font-semibold mb-2">Sustainability</h3>
       <p className="text-gray-700 mb-4">
@@ -177,7 +177,7 @@ const MoreAboutUs = () => {
     {/* Stewardship */}
     <div>
       <div className="flex justify-center mb-4">
-        <img src="/stewardship.jpg" alt="Stewardship Icon" className="w-30 h-30 object-contain" />
+        <img src="/stewardship.webp" alt="Stewardship Icon" className="w-30 h-30 object-contain" />
       </div>
       <h3 className="text-lg font-semibold mb-2">Stewardship</h3>
       <p className="text-gray-700">

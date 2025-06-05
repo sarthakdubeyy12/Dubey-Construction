@@ -14,7 +14,7 @@ const History = () => {
       {/* ─────────────────────────────────────────────────────────────── */}
       <section
         className="relative h-screen w-full bg-center bg-cover filter grayscale"
-        style={{ backgroundImage: "url('/black.jpg')" }}
+        style={{ backgroundImage: "url('/black.webp')" }}
       >
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/70"></div>
@@ -22,7 +22,7 @@ const History = () => {
         {/* Top-left: Dubey Construction Logo */}
         <div className="absolute top-6 right-6 z-10">
           <img
-            src="/dubey.jpg"
+            src="/dubey.webp"
             alt="Dubey Construction Logo"
             className="w-24 h-auto"
           />

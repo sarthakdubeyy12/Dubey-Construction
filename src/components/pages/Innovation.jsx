@@ -35,7 +35,7 @@ const Innovation = () => {
       {/* INTRO SECTION */}
       <div className="relative w-full overflow-hidden h-96">
         <img
-          src="/innovate2.jpg"
+          src="/innovate2.webp"
           alt="Innovation"
           className="absolute inset-0 w-full h-full "
         />
@@ -65,7 +65,7 @@ const Innovation = () => {
               data-aos-delay="100"
             >
               <img
-                src="/modeling.jpg"
+                src="/modeling.webp"
                 alt="AI Modeling"
                 className="w-full h-48 object-cover"
               />
@@ -84,7 +84,7 @@ const Innovation = () => {
               data-aos-delay="200"
             >
               <img
-                src="/smart.jpg"
+                src="/smart.webp"
                 alt="Smart Buildings"
                 className="w-full h-48 object-cover"
               />
@@ -104,7 +104,7 @@ const Innovation = () => {
               data-aos-delay="300"
             >
               <img
-                src="/sustainable12.jpg"
+                src="/sustainable12.webp"
                 alt="Sustainable Materials"
                 className="w-full h-48 object-cover"
               />

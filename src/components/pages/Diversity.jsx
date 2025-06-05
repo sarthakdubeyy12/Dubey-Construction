@@ -16,7 +16,7 @@ const Diversity = () => {
         <div className="absolute inset-0">
           <div
             className="w-full h-full bg-cover bg-center filter blur-sm scale-105 opacity-90"
-            style={{ backgroundImage: "url('/diversity.jpg')" }}
+            style={{ backgroundImage: "url('/diversity.webp')" }}
           ></div>
         </div>
 
@@ -53,7 +53,7 @@ const Diversity = () => {
           <div className="grid md:grid-cols-2 gap-10 items-start">
             {/* Talent Card */}
             <div className="group transition-transform duration-300 hover:scale-105">
-              <img src="/talent.jpg" alt="Talent" className="w-full object-cover h-72 rounded shadow-md" />
+              <img src="/talent.webp" alt="Talent" className="w-full object-cover h-72 rounded shadow-md" />
               <h3 className="text-2xl font-bold mt-4">Talent</h3>
               <p className="text-gray-700 mt-2">
                 We recognize diversity as a competitive advantage and focus on attracting and retaining the industry’s best talent through recruitment, engagement, and career development. We provide equitable opportunities for growth and advancement.
@@ -62,7 +62,7 @@ const Diversity = () => {
 
             {/* Workplace Card */}
             <div className="group transition-transform duration-300 hover:scale-105">
-              <img src="/talent12.jpg" alt="Workplace" className="w-full object-cover h-72 rounded shadow-md" />
+              <img src="/talent12.webp" alt="Workplace" className="w-full object-cover h-72 rounded shadow-md" />
               <h3 className="text-2xl font-bold mt-4">Workplace</h3>
               <p className="text-gray-700 mt-2">
                 Our goal is to create a workplace that reflects the diverse communities we serve. We foster belonging, equity, and mutual respect through inclusive programs, policies, and a culture of ownership.
@@ -74,7 +74,7 @@ const Diversity = () => {
         <div className="max-w-7xl mx-auto mt-16">
           <div className="grid md:grid-cols-2 gap-10 items-start">
             <div className="group transition-transform duration-300 hover:scale-105">
-              <img src="/talent.jpg" alt="Talent" className="w-full object-cover h-72 rounded shadow-md" />
+              <img src="/talent.webp" alt="Talent" className="w-full object-cover h-72 rounded shadow-md" />
               <h3 className="text-2xl font-bold mt-4">Industry</h3>
               <p className="text-gray-700 mt-2">
                 Dubey Construction delivers exceptional value to our clients by harnessing a diverse team of industry-leading professionals who drive solutions through innovative thinking, strong partnerships, and collaborative execution.
@@ -82,7 +82,7 @@ const Diversity = () => {
             </div>
 
             <div className="group transition-transform duration-300 hover:scale-105">
-              <img src="/talent12.jpg" alt="Workplace" className="w-full object-cover h-72 rounded shadow-md" />
+              <img src="/talent12.webp" alt="Workplace" className="w-full object-cover h-72 rounded shadow-md" />
               <h3 className="text-2xl font-bold mt-4">Community</h3>
               <p className="text-gray-700 mt-2">
                 Dubey Construction is deeply committed to the communities we serve, embracing a spirit of stewardship and volunteerism through active representation, engagement, and investment.
@@ -120,7 +120,7 @@ const Diversity = () => {
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <img
-              src="/women.jpg"
+              src="/women.webp"
               alt="Women in Construction"
               className="w-full object-cover h-72 rounded shadow-md transition-transform duration-500 transform hover:scale-105 hover:brightness-110"
             />

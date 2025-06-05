@@ -4,25 +4,25 @@ const Services = () => {
       title: "Residential Construction",
       description:
         "Your idea, our work. Build your customized dream home with Dubey Construction expert craftsmanship tailored to your vision and lifestyle.",
-      image: "/residential.jpg",
+      image: "/residential.webp",
     },
     {
       title: "Commercial Construction",
       description:
         "From business complexes to hotels, Dubey Construction delivers superior quality and efficiency in commercial construction, ensuring it reflects professionalism and functionality.",
-      image: "/commercial.jpg",
+      image: "/commercial.webp",
     },
     {
       title: "Interiors",
       description:
         "Right before moving in, we make your house a home with our top-notch interior design service. It is fully customized to reflect your unique style and preferences.",
-      image: "/interior.jpg",
+      image: "/interior.webp",
     },
     {
       title: "Maintenance",
       description:
         "Ensure the longevity and optimal performance of your property with Dubey Construction comprehensive building maintenance services. We help you keep your investment in top condition.",
-      image: "/maintenance.jpg",
+      image: "/maintenance.webp",
     },
   ];
 
