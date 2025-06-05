@@ -24,7 +24,7 @@ const ReachOut = () => {
   return (
     <section
       className="relative py-32 px-6 md:px-20 bg-fixed bg-center bg-cover text-white"
-      style={{ backgroundImage: "url('public/city-5354477_1920.jpg')" }}
+      style={{ backgroundImage: "url('/city.jpg')" }}
     >
       <div className="absolute inset-0 bg-black opacity-70" />
       <div className="relative z-10 max-w-4xl mx-auto">

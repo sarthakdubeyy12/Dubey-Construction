@@ -10,22 +10,22 @@ const Careers = () => {
 
   const legacySections = [
     {
-      img: "/public/architect-1080589_1920.jpg",
+      img: "/architect.jpg",
       title: "Build with Vision",
       text: "We're crafting a tomorrow rooted in precision, responsibility, and vision. Join us in projects that inspire progress.",
     },
     {
-      img: "/public/heaven-3395811_1920.jpg",
+      img: "/heaven.jpg",
       title: "Shape the Skyline",
       text: "From towering structures to sustainable spaces, be a part of projects that define the urban landscape.",
     },
     {
-      img: "/public/glass-facade-8016589_1920.jpg",
+      img: "/glass.jpg",
       title: "Lead with Integrity",
       text: "Our foundation is built on trust. We value ethical leadership and hands-on innovation in every build.",
     },
     {
-      img: "/public/facade-9182972_1920.jpg",
+      img: "/facade.jpg",
       title: "Design Your Future",
       text: "Empowering every team member with growth opportunities, mentorship, and an open platform for ideas.",
     },
