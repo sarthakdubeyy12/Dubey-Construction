@@ -338,26 +338,30 @@ const Navbar = () => {
         />
       </button>
       {isOpen.who && (
-        <div className="ml-4 mt-2 space-y-1">
-          {[
-            { name: "More About Us", path: "/who-we-are/more-about-us" },
-            { name: "Our History", path: "/who-we-are/history" },
-            { name: "Innovation", path: "/who-we-are/innovation" },
-            { name: "Safety", path: "/who-we-are/safety" },
-            { name: "Diversity and Equity", path: "/who-we-are/diversity" },
-            { name: "Privacy Policy", path: "/who-we-are/privacy-policy" },
-          ].map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              className="block text-white hover:text-yellow-300"
-              onClick={() => setMobileOpen(false)}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
-      )}
+  <div className="ml-4 mt-2 space-y-1">
+    {[
+      { name: "More About Us", path: "/who-we-are/more-about-us" },
+      { name: "Our History", path: "/who-we-are/history" },
+      { name: "Innovation", path: "/who-we-are/innovation" },
+      { name: "Safety", path: "/who-we-are/safety" },
+      { name: "Diversity and Equity", path: "/who-we-are/diversity" },
+      { name: "Privacy Policy", path: "/who-we-are/privacy-policy" },
+    ].map((item) => (
+      <Link
+        key={item.name}
+        to={item.path}
+        className="block text-white hover:text-yellow-300"
+        onClick={() => {
+          setMobileOpen(false);
+          setIsOpen((prev) => ({ ...prev, who: false }));
+        }}
+      >
+        {item.name}
+      </Link>
+    ))}
+  </div>
+)}
+
     </div>
 
     <Link to="/location" className="block text-white hover:text-yellow-400">Locations</Link>
